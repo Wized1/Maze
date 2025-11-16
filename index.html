@@ -43,7 +43,7 @@ canvas{background:#000022;border-radius:12px;box-shadow:0 8px 30px rgba(5,30,60,
     </div>
     <div id="stick"></div>
   </div>
-  <div id="winScreen">You  Win 🎉</div>
+  <div id="winScreen">You Win 🎉</div>
   <div id="winScreen">Desktop Site for difficult mode</div>
 </div>
 
@@ -232,5 +232,25 @@ window.addEventListener('resize',resize);
 resize();
 loop();
 </script>
+
+<script>
+  /**
+   * Register the Service Worker for Offline Access
+   * The file 'service-worker.js' must be present in the root directory.
+   */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      // Register the service worker at the root scope
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch(error => {
+          console.log('ServiceWorker registration failed: ', error);
+        });
+    });
+  }
+</script>
+
 </body>
-</html>
+  </html>
