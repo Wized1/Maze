@@ -3,9 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Endroid Maze</title> 
+<title>Endroid Maze</title>
+
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon.svg" type="svg/xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Maze">
+<meta name="theme-color" content="#03dac6">
+<meta name="description" content="A fun and challenging maze game built with pure JavaScript and HTML Canvas. Try to find the exit!">
+
+<meta property="og:title" content="Endroid Maze">
+<meta property="og:description" content="A fun and challenging maze game built with pure JavaScript and HTML Canvas. Try to find the exit!">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://Wized1.github.io/Maze/">
+<meta property="og:image" content="icon.svg"> 
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@yourtwitterhandle"> 
+<meta name="twitter:creator" content="@yourtwitterhandle">
+<meta name="twitter:title" content="Endroid Maze">
+<meta name="twitter:description" content="A fun and challenging maze game built with pure JavaScript and HTML Canvas. Try to find the exit!">
+<meta name="twitter:image" content="icon.svg">
+
 <style>
 html,body{margin:0;padding:0;height:100%;background:#000022;display:flex;justify-content:center;align-items:center;}
 .wrap{width:95vw;height:95vh;display:flex;justify-content:center;align-items:center;position:relative;}
@@ -50,6 +71,7 @@ canvas{background:#000022;border-radius:12px;box-shadow:0 8px 30px rgba(5,30,60,
 </div>
 
 <script>
+// ... (Your original JavaScript code remains here) ...
 const canvas = document.getElementById('c');
 const ctx = canvas.getContext('2d', {alpha:false});
 const joystick = document.getElementById('joystick');
@@ -238,11 +260,9 @@ loop();
 <script>
   /**
    * Register the Service Worker for Offline Access
-   * The file 'service-worker.js' must be present in the root directory.
    */
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      // Register the service worker at the root scope
       navigator.serviceWorker.register('/service-worker.js')
         .then(registration => {
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
