@@ -1,6 +1,6 @@
 // A version number for your cache. Update this number any time you change 
 // the static files in the urlsToCache list to trigger a cache update.
-const CACHE_NAME = 'maze-offline-v1';
+const CACHE_NAME = 'endroid-maze-v1';
 
 // List of files to cache upon installation. This includes your HTML, 
 // the inline CSS/JS (which is automatically included with index.html), 
