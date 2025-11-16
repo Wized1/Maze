@@ -51,13 +51,13 @@ Play Now
 
 <div>
   <a href="https://wized1.github.io/Maze" style="text-decoration:none;">
-    <button style="background-color:#4dabff;color:white;padding:12px 20px;margin:5px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">Play Maze</button>
+    <button style="background-color:#4dabff;color:white;padding:12px 20px;margin:5px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">  [ Play Maze ] </button>
   </a>
   <a href="https://wized1.github.io" style="text-decoration:none;">
-    <button style="background-color:#8ecbff;color:white;padding:12px 20px;margin:5px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">Endroid Projects</button>
+    <button style="background-color:#8ecbff;color:white;padding:12px 20px;margin:5px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">  [ Endroid Projects ]  </button>
   </a>
   <a href="https://github.com/wized1" style="text-decoration:none;">
-    <button style="background-color:#1a73e8;color:white;padding:12px 20px;margin:5px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">GitHub</button>
+    <button style="background-color:#1a73e8;color:white;padding:12px 20px;margin:5px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">  [ GitHub ]  </button>
   </a>
   <a href="https://igit.me/Endroid-WhatsApp" style="text-decoration:none;">
     <button style="background-color:#0a0a0c;color:white;padding:12px 20px;margin:5px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">Support</button>
